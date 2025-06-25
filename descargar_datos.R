@@ -21,9 +21,13 @@ tryCatch({
   dxy = getSymbols(symbol_dxy, src = "yahoo", from = start_date, 
                    to = end_date, auto.assign = FALSE)
   
-  write.zoo(eurusd, file = "./eurusd.csv", sep = ",", col.names = NA)
-  write.zoo(vix, file = "./vix.csv", sep = ",", col.names = NA)
-  write.zoo(dxy, file = "./dxy.csv", sep = ",", col.names = NA)
+  # Ruta base
+  ruta_base = "C:\\Users\\Usuario\\Desktop\\Universidad\\Tesis\\Database - my proyect"
+  
+  # Guardar archivos en esa ruta
+  write.zoo(eurusd, file = file.path(ruta_base, "eurusd.csv"), sep = ",")
+  write.zoo(vix,    file = file.path(ruta_base, "vix.csv"), sep = ",")
+  write.zoo(dxy,    file = file.path(ruta_base, "dxy.csv"), sep = ",")
   
   cat("Descarga completada con éxito\n")
 }, error = function(e) {

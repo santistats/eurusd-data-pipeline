@@ -22,7 +22,7 @@ tryCatch({
                    to = end_date, auto.assign = FALSE)
   
   # Ruta base
-  ruta_base = "C:\\Users\\Usuario\\Desktop\\Universidad\\Tesis\\Database - my proyect"
+  ruta_base = "C:\\Users\\Usuario\\Desktop\\Universidad\\Tesis\\Database - my proyect\\eurusd-data-pipeline"
   
   # Guardar archivos en esa ruta
   write.zoo(eurusd, file = file.path(ruta_base, "eurusd.csv"), sep = ",")

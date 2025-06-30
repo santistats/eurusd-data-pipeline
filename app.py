@@ -10,6 +10,7 @@ def index():
     <h2>Servidor de Datos EURUSD 📊</h2>
     <ul>
         <li><a href='/eurusd.csv'>eurusd.csv</a></li>
+        <li><a href='/eurusd_alpha.csv'>eurusd_alpha.csv</a></li>
         <li><a href='/vix.csv'>vix.csv</a></li>
         <li><a href='/dxy.csv'>dxy.csv</a></li>
     </ul>

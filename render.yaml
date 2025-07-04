@@ -4,3 +4,10 @@ services:
     env: python
     buildCommand: ./build.sh
     startCommand: bash start.sh
+
+  - type: cron
+    name: eurusd-update-cron
+    env: python
+    schedule: "*/15 * * * *"
+    buildCommand: ./build.sh
+    startCommand: python data_hora.py

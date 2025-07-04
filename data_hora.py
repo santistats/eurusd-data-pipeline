@@ -28,7 +28,9 @@ args = parser.parse_args()
 API_KEY2 = os.getenv("AV_HOURLY_KEY")
 symbol = "EUR/USD"
 interval = args.interval
-output_file = Path(args.output).resolve()
+project_dir = Path(__file__).resolve().parent
+output_file = project_dir / "eurusd_intraday.csv"
+
 
 def get_twelve_data(symbol, interval):
     url = (

@@ -20,7 +20,7 @@ parser.add_argument(
 parser.add_argument(
     "--output", 
     type=str, 
-    default="eurusd_intraday_twelve.csv", 
+    default="eurusd_intraday.csv", 
     help="Ruta y nombre de archivo para guardar los datos"
 )
 args = parser.parse_args()
